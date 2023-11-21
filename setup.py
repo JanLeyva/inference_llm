@@ -3,9 +3,10 @@ from setuptools import setup, find_packages
 setup(
     name='inference_llm',
     version='0.1',
-    packages=find_packages(),
-    description='A simple Python package',
-    long_description=open('README.md').read(),
+    package_dir={"": "src"},
+    packages=find_packages("src"),
+    description='',
+    long_description=open('README.md', encoding="utf-8").read(),
     long_description_content_type='text/markdown',
     author='Jan Leyva',
     author_email='janleyvamassague@gmail.com',
